@@ -1,0 +1,3 @@
+org.springframework.test.context.ContextCustomizerFactory = \
+    it.kedos.mia.config.SqlTestContainersSpringContextCustomizerFactory,it.\
+    kedos.mia.config.KafkaTestContainersSpringContextCustomizerFactory
