@@ -50,6 +50,18 @@ public class CacheConfiguration {
             createCache(cm, it.kedos.mia.domain.User.class.getName());
             createCache(cm, it.kedos.mia.domain.Authority.class.getName());
             createCache(cm, it.kedos.mia.domain.User.class.getName() + ".authorities");
+            createCache(cm, it.kedos.mia.domain.Region.class.getName());
+            createCache(cm, it.kedos.mia.domain.Country.class.getName());
+            createCache(cm, it.kedos.mia.domain.Location.class.getName());
+            createCache(cm, it.kedos.mia.domain.Department.class.getName());
+            createCache(cm, it.kedos.mia.domain.Department.class.getName() + ".employees");
+            createCache(cm, it.kedos.mia.domain.Task.class.getName());
+            createCache(cm, it.kedos.mia.domain.Task.class.getName() + ".jobs");
+            createCache(cm, it.kedos.mia.domain.Employee.class.getName());
+            createCache(cm, it.kedos.mia.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, it.kedos.mia.domain.Job.class.getName());
+            createCache(cm, it.kedos.mia.domain.Job.class.getName() + ".tasks");
+            createCache(cm, it.kedos.mia.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
